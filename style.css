@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.show-product-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_item_div .card img {
+    width: 100%;
+    height: 250px;
+}
+
+.input_box {
+    width: 60px;
+    height: 30px;
+}
+
+.header_logo img {
+    mix-blend-mode: multiply;
+}
+
+.add_to_card_btn button {
+    padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+}
+
+.add_to_card_btn button::after {
+    content: "";
+    border-bottom: 2px solid black;
+    position: absolute;
+    left: 0;
+    border: 2;
+    bottom: -4px;
+    width: 0%;
+    transition: all 0.3s linear;
+}
+
+.add_to_card_btn button:hover::after {
+    width: 100%;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.my_display_style {
+    display: none;
+}
+
+.display_hidden {
+    display: none;
+}
+
+.my_show_bill_display {
+    display: block;
+}
+
+.footer_image img {
+    mix-blend-mode: multiply;
+    filter: grayscale(80%);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer_image img:hover {
+    filter: grayscale(0%);
+}
+
+.icons i {
+    font-size: 25px;
+    padding: 10px;
+    background-color: honeydew;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: rotate 0.5s linear;
+}
+
+.icons i:hover {
+    background-color: rgb(101, 101, 101);
+    rotate: 360deg;
+    color: white;
+}
+
+.footer_display {
+    display: none;
+}
